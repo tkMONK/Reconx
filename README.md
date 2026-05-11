@@ -50,29 +50,22 @@ ReconX grades the target on six critical headers and returns a score out of 6:
 ```bash
 git clone https://github.com/tkMONK/Reconx.git
 cd Reconx
+go mod init Reconx
 go mod tidy
 go build -o reconx main.go
 ```
 
-### Dependencies
-
-```
-github.com/fatih/color   # Colorized terminal output
-github.com/miekg/dns     # DNS client & zone transfer (AXFR)
-```
-
----
-
 ## Usage
 
 ```
-./reconx [flags]
+./reconx [flag]
 ```
 
 ### Flags
 
 | Flag | Default | Description |
 |---|---|---|
+| `-h --help`  |  | usage of ./reconx 
 | `-d <domain>` | _(prompted)_ | Target domain, e.g. `example.com` |
 | `-o <path>` | `recon_results/<domain>_<timestamp>.json` | Custom JSON output path |
 | `-passive` | `false` | Skip active modules (zone transfer & web recon) |
