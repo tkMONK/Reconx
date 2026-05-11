@@ -48,8 +48,8 @@ ReconX grades the target on six critical headers and returns a score out of 6:
 ### Build from source
 
 ```bash
-git clone https://github.com/reconx/reconx.git
-cd reconx
+git clone https://github.com/tkMONK/Reconx.git
+cd Reconx
 go mod tidy
 go build -o reconx main.go
 ```
